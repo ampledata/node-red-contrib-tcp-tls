@@ -1,0 +1,49 @@
+{
+    "name": "node-red-contrib-tcp-tls",
+    "version": "1.0.0b1",
+    "description": "Node-RED TCP TLS Nodes",
+    "license": "Apache-2.0",
+    "url": "https://github.com/ampledata/node-red-contrib-tcp-tls",
+    "author": {
+        "name": "Greg Albrecht",
+        "email": "oss@undef.net",
+        "url": "https://github.com/ampledata/node-red-contrib-tcp-tls"
+    },
+    "homepage": "https://github.com/ampledata/node-red-contrib-tcp-tls",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ampledata/node-red-contrib-tcp-tls"
+    },
+    "keywords": [
+        "node-red",
+        "tls"
+    ],
+    "node-red": {
+        "nodes": {
+            "tcp-tls": "tcp-tls.js"
+        }
+    },
+    "devDependencies": {
+        "@commitlint/cli": "latest",
+        "@commitlint/config-conventional": "latest",
+        "eslint": "^6.8.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "latest",
+        "eslint-plugin-html": "latest",
+        "eslint-plugin-prettier": "latest",
+        "husky": "latest",
+        "jsdoc": "^3.6.4",
+        "lint-staged": "latest",
+        "mocha": "^7.1.1",
+        "node-red": "^1.0.5",
+        "node-red-node-test-helper": "^0.2.3",
+        "nyc": "^15.0.1",
+        "prettier": "latest",
+        "swagmock": "latest",
+        "xmlhttprequest": "latest"
+    },
+    "scripts": {
+        "start": "node-red",
+        "test": "nyc mocha --timeout 40000 --exit 'test/**test.js'"
+    }
+}

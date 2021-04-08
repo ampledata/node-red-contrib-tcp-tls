@@ -1,0 +1,60 @@
+{
+    "label": {
+        "type": "Type",
+        "output": "Output",
+        "port": "port",
+        "host": "at host",
+        "payload": "payload(s)",
+        "delimited": "delimited by",
+        "close-connection": "Close connection after each message is sent?",
+        "decode-base64": "Decode Base64 message?",
+        "server": "Server",
+        "return": "Return",
+        "ms": "ms",
+        "chars": "chars",
+        "name": "Name",
+        "topic": "Topic",
+        "tls-config": "TLS Configuration"
+    },
+    "type": {
+        "listen": "Listen on",
+        "connect": "Connect to",
+        "reply": "Reply to TCP"
+    },
+    "output": {
+        "stream": "stream of",
+        "single": "single",
+        "buffer": "Buffer",
+        "string": "String",
+        "base64": "Base64 String"
+    },
+    "return": {
+        "timeout": "after a fixed timeout of",
+        "character": "when character received is",
+        "number": "a fixed number of chars",
+        "never": "never - keep connection open",
+        "immed": "immediately - don't wait for reply"
+    },
+    "status": {
+        "connecting": "connecting to __host__:__port__",
+        "connected": "connected to __host__:__port__",
+        "listening-port": "listening on port __port__",
+        "stopped-listening": "stopped listening on port",
+        "connection-from": "connection from __host__:__port__",
+        "connection-closed": "connection closed from __host__:__port__",
+        "connections": "__count__ connection",
+        "connections_plural": "__count__ connections"
+
+    },
+    "errors": {
+        "connection-lost": "connection lost to __host__:__port__",
+        "timeout": "timeout closed socket port __port__",
+        "cannot-listen": "unable to listen on port __port__, error: __error__",
+        "error": "error: __error__",
+
+        "socket-error": "socket error from __host__:__port__",
+        "no-host": "Host and/or port not set",
+        "connect-timeout": "connect timeout",
+        "connect-fail": "connect failed"
+    }
+}
