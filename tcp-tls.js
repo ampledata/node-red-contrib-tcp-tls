@@ -50,8 +50,7 @@ module.exports = function(RED) {
     function getAllowUnauthorized() {
       const allowUnauthorized = process.env.NODE_TLS_REJECT_UNAUTHORIZED === '0';
 
-      if (allowUnauthorized && warnOnAllowUnauthorized) {
-        warnOnAllowUnauthorized = false;
+      if (allowUnauthorized) {
         process.emitWarning(
           'Setting the NODE_TLS_REJECT_UNAUTHORIZED ' +
           'environment variable to \'0\' makes TLS connections ' +
@@ -118,7 +117,7 @@ module.exports = function(RED) {
                     node.log(RED._("status.connected", {host: node.host, port: node.port}));
 
                     node.status({
-                        text: RED._("status.connected", {host: host, port: port}),
+                        text: RED._("status.connected", {host: node.host, port: node.port}),
                         shape: "dot",
                         fill: "green"
                     });

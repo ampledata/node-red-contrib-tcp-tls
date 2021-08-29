@@ -1,6 +1,6 @@
 {
     "name": "node-red-contrib-tcp-tls",
-    "version": "1.0.0b1",
+    "version": "1.0.1",
     "description": "Node-RED TCP TLS Nodes",
     "license": "Apache-2.0",
     "url": "https://github.com/ampledata/node-red-contrib-tcp-tls",
@@ -22,6 +22,9 @@
         "nodes": {
             "tcp-tls": "tcp-tls.js"
         }
+    },
+    "dependencies": {
+        "denque": "^2.0.0"
     },
     "devDependencies": {
         "@commitlint/cli": "latest",
@@ -46,4 +49,4 @@
         "start": "node-red",
         "test": "nyc mocha --timeout 40000 --exit 'test/**test.js'"
     }
-}
+},
