@@ -49,4 +49,4 @@
         "start": "node-red",
         "test": "nyc mocha --timeout 40000 --exit 'test/**test.js'"
     }
-},
+}
