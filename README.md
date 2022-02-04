@@ -1,3 +1,8 @@
+# Hello, thank you for your interest in node-red-contrib-tcp-tls
+
+Please note that this functionality has been merged into core Node-RED as of [2.2.0](https://nodered.org/).
+
+This repository is now archived. It should still work with older versions of Node-RED, but I won't be continuing support for older versions, I hope you understand!
 
 [![NPM](https://nodei.co/npm/node-red-contrib-tcp-tls.png)](https://nodei.co/npm/node-red-contrib-tcp-tls/)
 
